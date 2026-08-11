@@ -1,9 +1,9 @@
-# Advisor Inbox
+# 顾问收件箱
 
-Use this file for unresolved recommendations that are worth revisiting.
+使用此文件记录值得再次查看但尚未解决的建议。
 
-## Open
+## 待处理
 - 
 
-## Deferred
+## 已推迟
 - 

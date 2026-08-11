@@ -1,21 +1,21 @@
-# Advisor Report
+# 顾问报告
 
-## Summary
-One sentence: what matters most in this workspace right now?
+## 摘要
+一句话：当前工作空间中最重要的是什么？
 
-## Advisor Cards
+## Advisor Card
 
-### 1. [Title]
-- Layer:
-- Type:
-- Evidence:
-- Why it matters:
-- Recommendation:
-- Confidence:
-- Action:
+### 1. [标题]
+- 层级：
+- 类型：
+- 证据：
+- 为什么重要：
+- 建议：
+- 置信度：
+- 行动：
 
-## What I am intentionally not recommending
-List 1-3 tempting but unnecessary optimizations.
+## 我有意不建议的内容
+列出 1-3 个看似诱人但不必要的优化。
 
-## Next observation
-What should the Advisor watch for before the next review?
+## 下次观察
+顾问在下次回顾前应关注什么？

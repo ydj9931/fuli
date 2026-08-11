@@ -1,70 +1,70 @@
 # Creator Doctrine v0.1
 
-This file contains creator-oriented working principles.
-They are intentionally opinionated and should be treated as `CREATOR_PRINCIPLE`,
-not universal truth.
+本文件包含面向创作者的工作原则。
+这些原则刻意带有立场，应被视为 `CREATOR_PRINCIPLE`（创作者原则），而非普适真理。
 
-## 1. Creation over throughput
-The goal is not to complete the maximum number of tasks.
-Prefer work that compounds into capability, reusable methods, works, reputation,
-better questions, or stronger feedback loops.
+## 1. 创作优先于吞吐量
 
-## 2. Real work is a sensor
-Formal work can expose real contradictions, constraints, unmet needs, and
-institutional friction. These may become raw material for later creation.
+目标不是完成尽可能多的任务。
+优先选择能够复利为能力、可复用方法、作品、声誉、更好的问题或更强的反馈循环的工作。
 
-## 3. Organization assets stay with the organization
-Do not extract confidential or protected organizational assets.
-Where appropriate, abstract and de-identify transferable insights before using
-them in personal creation.
+## 2. 真实工作是传感器
 
-## 4. Prefer versionable work
-For long-lived personal creation, prefer structures that preserve change history,
-allow rollback, and support future collaboration.
+正式工作会暴露真实的矛盾、约束、未被满足的需求和制度性摩擦。这些可能成为后续创作的原材料。
 
-Git/GitHub-like collaboration is a strong default for this doctrine, especially
-for text, code, research notes, issue-driven exploration, and open work.
-But it is a recommendation, not a universal requirement.
+## 3. 组织资产留在组织
 
-## 5. Let structure emerge
-Do not force every idea into a Project.
-Do not force every Project into a repository.
-Elevate only when evidence shows persistence, complexity, collaboration need,
-or output intent.
+不要提取机密或受保护的组织资产。
+在适当的情况下，在使用到个人创作之前，对可迁移的洞察进行抽象和去标识化处理。
 
-## 6. Issue-like thinking is valuable
-For exploratory creation, separate:
-- questions;
-- hypotheses;
-- evidence;
-- tasks;
-- outputs.
+## 4. 偏好可版本化的工作
 
-A question or issue can be a durable object before a finished work exists.
+对于长期个人创作，优先选择能够保留变更历史、允许回滚并支持未来协作的结构。
 
-## 7. Automate low-value friction
-Good automation removes:
-- copying;
-- repetitive formatting;
-- predictable transformations;
-- routine retrieval.
+类 Git/GitHub 协作是本信条的强默认选项，尤其适用于文本、代码、研究笔记、Issue 驱动的探索和开放工作。
+但这是推荐，不是普适要求。
 
-Keep human involvement where noticing, interpretation, judgment, taste,
-comparison, or learning is central.
+## 5. 让结构自然涌现
 
-## 8. Works are cognitive experiments
-A work is not only an output.
-Publishing creates external feedback that can update the creator's model.
+不要强迫每个想法变成项目。
+不要强迫每个项目变成仓库。
+仅在有证据显示持续性、复杂性、协作需求或产出意图时才进行升级。
 
-## 9. Look for compounding
-A healthy AI-native practice should gradually produce:
-Task → Workflow → Skill → Capability → Work → Feedback → Better Questions.
+## 6. Issue 式思维是有价值的
 
-Not every activity must move upward, but the overall system should create
-more durable value over time.
+对于探索性创作，请区分：
+- 问题；
+- 假设；
+- 证据；
+- 任务；
+- 产出。
 
-## 10. Prefer open collaboration when maturity justifies it
-When a personal work becomes durable, versioned, shareable, and contribution-ready,
-consider an open collaborative space.
+一个问题或 Issue 在成品出现之前就可以是一个持久的对象。
 
-Openness should be earned by the maturity of the object, not forced as ideology.
+## 7. 自动化低价值摩擦
+
+好的自动化消除：
+- 复制；
+- 重复格式化；
+- 可预测的转换；
+- 常规检索。
+
+在注意、解读、判断、品味、比较或学习至关重要的地方，保留人的参与。
+
+## 8. 作品是认知实验
+
+作品不仅是产出。
+发布会产生外部反馈，从而更新创作者的心智模型。
+
+## 9. 寻找复利
+
+一个健康的 AI-native 实践应该逐步产生：
+Task → Workflow → Skill → Capability → Work → Feedback → Better Questions（更好的问题）。
+
+并非每项活动都必须向上跃迁，但整个系统应该随着时间产生更多持久价值。
+
+## 10. 在成熟度允许时偏好开放协作
+
+当个人作品变得持久、可版本化、可分享且可接受贡献时，考虑开放协作空间。
+
+开放性应由对象的成熟度来赢得，而不是作为意识形态强加。

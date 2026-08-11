@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Creator Advisor workspace scanner v0.1
+富丽 Creator Advisor 工作空间扫描器 v0.1
 
-Produces a lightweight snapshot of a workspace without modifying user files.
-No external packages required.
+生成工作空间的轻量快照，不修改用户文件。
+无需外部依赖包。
 """
 
 from pathlib import Path

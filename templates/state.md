@@ -1,16 +1,16 @@
-# Advisor State
+# 顾问状态
 
-Last scan:
-Last review:
+上次扫描：
+上次回顾：
 
-## Current workspace understanding
+## 当前工作空间理解
 - 
 
-## Active patterns being watched
+## 正在观察的活动模式
 - 
 
-## Current high-value open questions
+## 当前高价值开放问题
 - 
 
-## Notes
-Do not store secrets, credentials, or confidential copied source material here.
+## 备注
+不要在此存储密钥、凭据或复制的机密源材料。

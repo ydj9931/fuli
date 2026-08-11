@@ -1,6 +1,6 @@
-# Advisor History
+# 顾问历史
 
-Record advice feedback so later reviews can learn from outcomes.
+记录建议反馈，以便后续回顾从结果中学习。
 
-| Date | Advice | Decision | Later outcome |
+| 日期 | 建议 | 决策 | 后续结果 |
 |---|---|---|---|
