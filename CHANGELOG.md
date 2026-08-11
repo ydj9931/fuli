@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## v0.4 — 2026-08-11
+
+### 版本主题
+
+**体验收敛**
+
+### 产品变化
+
+- 用户入口简化为两个："富丽扫描"和"富丽升级"，去掉 SCAN/REVIEW/REFLECT 概念负担
+- 统一扫描流程：宿主 Agent 基础检查 + 富丽创作判断 → 统一 Suggestions
+- 建议标注来源：`🤖 来自 [宿主名称]` / `🌿 来自富丽`
+- 新增"富丽升级"：一键检查并安全更新，只动系统文件不动 `.fuli/`
+- 安装心智转变：富丽安装到 Agent 全局，而非项目本地
+- README 重写为：安装 → 扫描 → 升级 → 卸载 四步
+- 明确两层空间：富丽系统文件 / 用户 `.fuli/` 资产，升级只碰前者
+
+### 工程变化
+
+- `version` 从 `metadata.version` 回归标准 `version: "0.4.0"`
+- 新增 `VERSION` 文件，集中管理版本号
+- 新增 `scripts/update_fuli.py`：安全自更新（仅 Git 安装、仅 fast-forward）
+- `富丽扫描` 内部自动选择 SCAN/REVIEW/REFLECT，用户无需学习
+- 建立标准发布流程：开发 → 升级 VERSION → CHANGELOG → 评测 → tag → Release
+
+---
+
 ## v0.3 — 2026-08-11
 
 ### 版本主题
