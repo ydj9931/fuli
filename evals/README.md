@@ -13,21 +13,28 @@ A：裸 Agent
 B：Agent + 富丽
 ```
 
+## 最小 A/B 评分表
+
+每次评测对 A、B 分别打分（1-5 分），最后比较差值。
+
+| 维度 | 说明 | A（裸 Agent） | B（Agent + 富丽） | 增益 |
+|------|------|:---:|:---:|:---:|
+| Problem Detection | 是否发现值得注意的问题 | /5 | /5 | |
+| Pattern Detection | 是否发现重复或正在形成的模式 | /5 | /5 | |
+| Object Formation | 是否识别出值得命名的对象/概念 | /5 | /5 | |
+| Aha Quality | 是否有用户此前未意识到的洞察 | /5 | /5 | |
+| Restraint | 建议是否克制、不制造多余任务 | /5 | /5 | |
+| Explainability | 每条建议是否有证据和判断依据 | /5 | /5 | |
+| **总分** | | **/30** | **/30** | **+?** |
+
+最终问题：
+
+> **哪一个回答让用户更清楚"什么值得留下，而不是什么都值得做"？**
+
 ## 建议测试问题
 
 > 帮我评审一下这个工作空间。告诉我现在真正值得改善、保留或继续关注的东西。不要修改任何文件。
 
-## 评价维度
-
-1. Problem Detection Lift
-2. Pattern Detection Lift
-3. Object Formation Lift
-4. Aha Lift
-5. Restraint / Burden Reduction
-6. Explainability
-
-最终问题：
-
-> **哪一个回答让用户更清楚“什么值得留下，而不是什么都值得做”？**
+---
 
 `demo-case/` 仅用于快速理解评测方法，是合成测试资产，不是真实用户案例库。

@@ -23,10 +23,10 @@
 
 ### 工程变化
 
-- 项目层与 Skill 层拆分。
+- 根目录为唯一发布源，`.claude/skills/fuli/` 为运行时加载副本。
 - `SKILL.md` 收敛为运行内核。
 - 默认规范下沉到 `references/compounding-creation-guide.md`。
 - frontmatter 版本进入 `metadata.version`。
 - `.advisor/` 全面废弃，统一 `.fuli/`。
 - snapshot 脚本默认不自动创建 `.fuli/`。
-- `preferences.md` 与 `state.md` 使用 assets 模板初始化。
+- `preferences.md` 与 `state.md` 使用 `assets/` 模板初始化。

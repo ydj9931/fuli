@@ -82,6 +82,8 @@ metadata:
 
 层级越高，证据要求越高，自动执行权限越低。
 
+**L4 及以上默认必须可解释**：每条建议必须包含 Evidence（证据）、Why it matters（为什么重要）、Basis（判断依据）、Confidence（置信度）。缺少任一项不得输出为建议。
+
 ## 8. 建议类型
 
 - `HARD_FINDING`
