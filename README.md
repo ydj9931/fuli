@@ -1,60 +1,318 @@
-# Creator Advisor Skill v0.1
+# 富丽 FULI v0.2
 
-A minimal AI work-and-creation advisor designed to run inside an existing super-agent environment.
+> **发现工作中值得复利的东西。**
 
-## What it is
+富丽（FULI）是一位运行在 Codex、WorkBuddy、Claude Code 等超级 Agent 之上的 **AI 工作与创作顾问**。
 
-This is **not** another AI assistant.
+她不替代大模型，也不重新制造一个 Agent。
 
-It is a Skill that helps an existing AI agent inspect how you work and create,
-then recommend what should be cleaned up, restructured, automated, elevated,
-turned into a work, or explored further.
+超级 Agent 已经很擅长读取文件、搜索资料、写代码、修改文档、调用工具和执行任务。富丽希望解决的是另一个问题：
 
-## Minimal interaction
+> **面对越来越强的 AI，我们到底应该把什么交给 AI，什么值得复用，什么值得自动化，什么应该成为长期项目、作品或研究问题？**
 
-Install or expose this Skill to your agent, then use one of three intents:
+换句话说：
 
-- **SCAN** — inspect the current workspace now.
-- **REVIEW** — compare with previous Advisor state.
-- **REFLECT** — search for higher-order creation / research signals.
+> **Agent 有能力，富丽给它判断标准。**
 
-The host agent may call `scripts/scan_workspace.py` to create a lightweight workspace snapshot.
+---
 
-## Core principle
+## 为什么做富丽
 
-**Observe → Advise → User decides → Existing Agent executes**
+今天大多数 AI 使用仍然停留在：
 
-## First version constraints
+```
+Task → AI 执行 → 节省时间 → 下一个 Task
+```
 
-- no standalone app;
-- no built-in LLM;
-- no new chat UI;
-- no proprietary workspace;
-- no forced Git/GitHub;
-- no automatic destructive actions.
+这当然有价值，但它很容易形成一个只追求效率的循环。
 
-## Suggested first test
+富丽更关心另一条路径：
 
-Point the Skill at one real creator workspace and ask:
+```
+真实工作 → 发现问题 → AI 辅助理解
+→ Workflow / Skill / 方法 → Project / Work
+→ 外部反馈 → 新能力与新认知 → 更好的问题
+```
 
-> Use Creator Advisor to SCAN this workspace. Do not change anything. Give me only the highest-value findings.
+我们把这种长期积累称为：**复利价值（Compounding Value）**。
 
-Then repeat later with REVIEW.
+富丽关注的不是"AI 今天帮你节省了多少分钟"，而是：
 
-## Folder structure
+> **今天做的事情，有多少在明天还能继续产生价值？**
 
-```text
-creator-advisor-skill/
+---
+
+## 富丽适合谁
+
+富丽主要面向 **AI-native Creator**，尤其是 **实践型创作者（Practitioner-Creator）**。
+
+他们可能是：研究者、写作者、产品经理、设计师、教育者、咨询顾问、开源贡献者、创业者、投资者、产业实践者，或任何同时拥有真实工作与长期个人创作的人。
+
+这类人的工作不仅是任务来源，也是 **现实传感器（Reality Sensor）**——真实项目、真实用户、真实组织、真实失败和真实矛盾，都可能成为长期研究和创作的原料。
+
+富丽暂时不以"最大化岗位任务效率"为主要目标。
+
+---
+
+## 富丽不是什么
+
+富丽 **不是**：
+
+- 一个新的基础模型
+- 一个新的通用 Agent
+- 一个新的聊天机器人
+- 一个 Todo 工具
+- 一个文件管理器
+- 一个知识库
+- 一个新的工作台
+- 一个替用户做所有决定的自动化系统
+
+当前最重要的产品关系是：
+
+```
+Human governs → FULI recommends → Existing Agent executes
+```
+
+**用户拥有最终决策权。**
+
+---
+
+## 富丽提供什么
+
+富丽给现有超级 Agent 增加五类能力：
+
+| 能力 | 说明 |
+|------|------|
+| **观察协议** | 告诉 Agent 不只"检查文件"，而应该看哪些真正影响工作与创作的问题 |
+| **判断框架** | 判断什么是一次 Task、什么成为重复 Workflow、什么值得 Skill 化、项目化、作品化 |
+| **Creator Doctrine** | 一套明确但不冒充真理的创作者工作方法论 |
+| **纵向记忆** | 不仅问"现在是什么状态"，还问"和上一次相比，什么正在发生变化" |
+| **注意力策略** | 持续观察，克制打扰，只在值得改变的时候出现 |
+
+---
+
+## 三个核心操作
+
+富丽 v0.2 刻意只保留三个核心操作。
+
+### SCAN：现在这里最值得注意的是什么？
+
+用于第一次进入一个工作空间，或进行当前状态检查。
+
+```
+使用富丽 SCAN 当前工作空间。
+不要修改任何内容。
+只告诉我最值得注意的发现。
+```
+
+### REVIEW：和上次相比，什么正在变化？
+
+富丽会尝试识别：重复模式、工作停滞、结构变化、Workflow 候选、项目成熟度变化、过去建议是否产生效果。
+
+```
+富丽 REVIEW 当前项目。
+重点比较和上一次状态之间的变化。
+```
+
+### REFLECT：这些变化背后，有什么值得长期关注？
+
+这是富丽最重要、也最需要谨慎使用的一层。它尝试发现：值得 Skill 化的工作、值得升级的 Project、潜在作品、重复出现的矛盾、尚未命名的问题、潜在研究主题。
+
+```
+富丽 REFLECT 当前工作空间。
+这里有没有值得 Skill 化、项目化、作品化、深入研究的信号？
+```
+
+---
+
+## 检测分层
+
+富丽不会把所有建议伪装成同一种"真理"。检测从低争议事实逐渐走向高阶判断：
+
+```
+L0  硬发现（客观事实）
+L1  工作空间卫生
+L2  结构问题
+L3  AI 就绪度
+L4  Workflow / Skill 候选
+L5  Project / Work / 创作信号
+L6  认知 / 研究信号
+```
+
+越往上，不确定性越高，自动执行权限越低，越需要用户判断。
+
+---
+
+## 四种建议类型
+
+| 类型 | 说明 |
+|------|------|
+| `HARD_FINDING` | 客观或接近客观的问题，如版本冲突、数据丢失风险 |
+| `BEST_PRACTICE` | 较广泛适用的方法建议 |
+| `CREATOR_PRINCIPLE` | 来自 Creator Doctrine 的创作者方法论，是一种工作哲学 |
+| `INSIGHT_HYPOTHESIS` | 高阶推断，须明确说明证据与置信度 |
+
+---
+
+## Creator Doctrine（创作者信条）
+
+### 创作优先于吞吐量
+
+不是完成越多越好。
+
+### 真实工作是传感器
+
+真实工作是长期创作的重要现实来源。
+
+### 自动化低价值摩擦
+
+应该自动化：复制、格式化、确定性转换、重复检索、固定流程。
+
+### 保留高价值认知摩擦
+
+不要轻易自动化：阅读、比较、判断、品味形成、问题定义、模型重构、异常发现。
+
+> **有些摩擦本身就是认知形成过程。**
+
+### 作品是认知实验
+
+作品不仅是输出：
+
+```
+作品 → 发布 → 真实反馈 → 修正认知 → 新问题
+```
+
+### 偏好可版本化的长期工作
+
+长期个人创作适合逐渐进入：版本管理、Issue 驱动、Review、Fork、开放协作。Git / GitHub 是当前强推荐范式，但不是强制规则。
+
+---
+
+## Native First
+
+富丽 v0.2 不再把"自己扫描文件"作为产品核心。Codex、WorkBuddy 等宿主 Agent 已经拥有强大的原生工作空间读取能力。
+
+> **Native first, script when useful.**
+
+优先使用宿主 Agent 已有能力（浏览目录、阅读内容、Git、搜索、代码分析、文件修改历史、当前任务上下文）。只有在需要确定性结果时才使用富丽自带脚本（Hash 重复检测、文件时间统计、Snapshot、历史比较）。
+
+---
+
+## 长期状态
+
+如果用户允许，富丽可以在工作空间中维护：
+
+```
+.fuli/
+├── state.md      # 当前对工作空间的简洁理解
+├── inbox.md      # 值得以后出现、但当前不需要打扰的问题
+├── history.md    # Advice → Accept/Reject/Defer → Actual Outcome
+└── snapshots/    # 必要的低敏环境状态
+```
+
+---
+
+## Attention Budget（注意力预算）
+
+富丽不希望成为另一个制造信息噪声的 AI。建议分为三级：
+
+- **Silent**：发现了，但不值得打扰用户
+- **Inbox**：值得保留，在下一次自然工作节点出现
+- **Interrupt**：极少数真正重要的问题（数据丢失风险、密钥泄露、破坏性版本冲突）
+
+> **好的 Advisor 不只知道应该说什么，也知道什么时候应该闭嘴。**
+
+---
+
+## 重要工作资产边界
+
+富丽不鼓励把组织内部信息直接搬到个人空间。更准确的原则是：
+
+> **组织事实与受保护资产留在组织；个人可以在允许范围内沉淀经过抽象和脱敏后的可迁移认知。**
+
+```
+具体工作经验 → 边界识别 → 脱敏 → 抽象 → 可迁移模式 → 个人认知资产
+```
+
+这不是规避企业政策或法律义务的工具。
+
+---
+
+## 项目归档
+
+当一次工作形成新产品版本、核心定位变化、MVP 决策、多个重要新原则或新研究母题时，富丽可以建议归档。
+
+归档形成三份文档：
+
+| 文档 | 回答的问题 |
+|------|-----------|
+| Conversation Archive | 我们为什么走到这里？ |
+| Product Spec / Current Truth | 现在已经确定什么？ |
+| Insight Memo | 接下来什么最值得继续思考？ |
+
+---
+
+## 当前技术形态
+
+富丽 v0.2 不是独立 App。她首先是一个可以被超级 Agent 使用的 Skill：
+
+```
+fuli/
 ├── SKILL.md
 ├── DOCTRINE.md
 ├── README.md
 ├── scripts/
 │   └── scan_workspace.py
+├── detectors/
+│   └── README.md
 ├── templates/
 │   ├── advisor-report.md
 │   ├── state.md
 │   ├── inbox.md
 │   └── history.md
-└── detectors/
-    └── README.md
+└── examples/
+    └── sample-advisor-state/
 ```
+
+> **富丽寄生在工作发生的地方。** 用户不需要再安装一个新的 AI 工作台。
+
+---
+
+## 当前阶段
+
+富丽已通过最小 Skill 运行验证。但真正需要验证的并不是"代码能不能跑"，而是 **Advisor Intelligence**：
+
+> **富丽是否能够持续形成值得信赖的工作与创作判断？**
+
+我们重点记录三种真实反馈：
+
+- **Valuable**："对，而且我之前没有意识到。"
+- **Wrong / Over-advice**：套话、过度结构化、无意义自动化、错误推断
+- **Missed**：用户能明显看到的重要问题，富丽却没有发现
+
+---
+
+## Roadmap
+
+当前路线不是预先建设一个巨大 Cognitive OS，而是：
+
+```
+FULI Advisor → 长期真实使用 → 发现真正需要的对象和结构
+→ Workbench 自然长出来 → Cognitive Partner
+```
+
+> **Workbench 应该从真实建议和真实工作模式中长出来，而不是由产品经理提前画出来。**
+
+---
+
+## 一句话
+
+> **富丽是一位运行在超级 Agent 之上的 AI 工作与创作顾问。她持续观察你的工作方式，帮助你发现什么值得整理、复用、自动化、作品化和长期投入，让今天的工作逐渐成为明天还能继续生长的资产。**
+
+> **富丽不急着帮你把事情做完，她更关心这件事最后会留下什么。**
+
+---
+
+## License
+
+项目处于早期实验阶段。欢迎通过 Issue、Discussion 和真实使用案例参与共同设计。
