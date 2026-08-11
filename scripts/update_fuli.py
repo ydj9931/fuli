@@ -6,9 +6,12 @@
 仅支持 Git 安装方式，不做强制覆盖。
 """
 
+from __future__ import annotations
+
 import subprocess
 import sys
 from pathlib import Path
+from typing import Optional
 
 OFFICIAL_REPO = "https://github.com/ydj9931/fuli.git"
 
