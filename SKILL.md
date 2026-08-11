@@ -1,5 +1,5 @@
 ---
-name: creator-advisor
+name: fuli
 version: 0.2.0
 description: >
   面向已在使用强大 AI 代理的创作者用户的 AI 工作与创作顾问。
