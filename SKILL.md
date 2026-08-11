@@ -1,6 +1,6 @@
 ---
 name: creator-advisor
-version: 0.1.0
+version: 0.2.0
 description: >
   面向已在使用强大 AI 代理的创作者用户的 AI 工作与创作顾问。
   它检查工作空间，识别硬问题、AI 就绪度差距、工作流机会、
@@ -8,7 +8,7 @@ description: >
   它不替代用户的代理，只提供建议，宿主代理仅在用户批准后执行。
 ---
 
-# Creator Advisor Skill v0.1
+# 富丽 FULI Skill v0.2
 
 ## 1. 目的
 
