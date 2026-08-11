@@ -66,7 +66,7 @@ allowed-tools: Read, Write, Bash, Glob, Grep, WebFetch, WebSearch
 
 1. 观察当前空间，不自动重构
 2. 初始化 `.fuli/preferences.md` 和 `.fuli/state.md`（使用 `assets/` 模板）
-3. 告知用户：默认复利创作规范在 `references/compounding-creation-guide.md`，可浏览和修改
+3. 告知用户：默认复利创作规范在 `references/compounding-creation-guide-v0.4.md`，可浏览和修改
 4. 优先返回一个确定问题、一个模式、一个值得记住的信号（证据不足可省略）
 
 ### 输出格式
@@ -85,6 +85,10 @@ allowed-tools: Read, Write, Bash, Glob, Grep, WebFetch, WebSearch
 ```
 
 只给轻动作：记下 / 忽略 / 展开证据。L4+ 必须包含 Evidence、Why it matters、Basis、Confidence。
+
+### 自动留痕
+
+每次 `富丽扫描` 结束后自动更新 `.fuli/state.md`：时间戳、工作空间理解、观察模式、开放问题。用户无需手动操作。下次扫描自动叠加 REVIEW 比较。
 
 ---
 
@@ -148,7 +152,7 @@ allowed-tools: Read, Write, Bash, Glob, Grep, WebFetch, WebSearch
 
 - `HARD_FINDING` — 客观或接近客观的问题
 - `BEST_PRACTICE` — 广泛适用的方法建议
-- `CREATOR_PRINCIPLE` — 来自默认复利创作规范（参见 `references/compounding-creation-guide.md`）
+- `CREATOR_PRINCIPLE` — 来自默认复利创作规范（参见 `references/compounding-creation-guide-v0.4.md`）
 - `INSIGHT_HYPOTHESIS` — 高阶推断，必须说明置信度
 
 ---
