@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-富丽 Creator Advisor 工作空间扫描器 v0.1
+富丽 FULI 工作空间扫描器 v0.2
 
 生成工作空间的轻量快照，不修改用户文件。
 无需外部依赖包。
@@ -12,13 +12,8 @@ from collections import Counter, defaultdict
 from datetime import datetime
 
 IGNORE_DIRS = {
-    ".git", ".advisor", "node_modules", ".venv", "venv",
+    ".git", ".fuli", ".advisor", "node_modules", ".venv", "venv",
     "__pycache__", ".DS_Store"
-}
-
-TEXT_EXTS = {
-    ".md", ".txt", ".py", ".js", ".ts", ".tsx", ".jsx", ".json",
-    ".yaml", ".yml", ".toml", ".csv", ".html", ".css", ".sh"
 }
 
 def file_hash(path, limit=50 * 1024 * 1024):
@@ -128,8 +123,9 @@ def main():
     if not root.exists() or not root.is_dir():
         raise SystemExit(f"Workspace not found or not a directory: {root}")
 
-    out = Path(args.out).expanduser().resolve() if args.out else root / ".advisor" / "snapshots"
-    out.mkdir(parents=True, exist_ok=True)
+    out = Path(args.out).expanduser().resolve() if args.out else root / ".fuli" / "snapshots"
+    if not out.exists():
+        out.mkdir(parents=True)
 
     snap = scan(root)
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
